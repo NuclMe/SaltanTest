@@ -1,13 +1,8 @@
 
-function UserData(props) {
-
-    const { persons } = props
-
-    if (!persons || persons.length === 0) return <p>Нет данных.</p>
-
+function UserData() {
     return (
         <div>
-            <div>
+            {/* <div>
                 <table>
                     <thead>
                         <tr>
@@ -32,12 +27,14 @@ function UserData(props) {
                         }
                     </tbody>
                 </table>
-            </div>
+            </div> */}
             <div className='search-field'>
                 <form action="#">
                     <input type="text" />
                 </form>
             </div>
+
+
             <div className='cards-wrapper'>
                 <div className='card'>
                     <a href='#'>
@@ -51,6 +48,8 @@ function UserData(props) {
 
                 </div>
             </div>
+
+            
         </div>
     )
 }
